@@ -1,0 +1,2 @@
+import React from "react";
+export default function App() { return <div className="min-h-screen bg-gray-100 flex items-center justify-center"><div className="p-10 bg-white rounded-2xl shadow-xl"><h1 className="text-4xl font-extrabold text-indigo-600 mb-4">Tailwind Fullstack</h1><p className="text-gray-600">IT 마이스터의 현대적 개발 연구소입니다.</p></div></div>; }
