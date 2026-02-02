@@ -1,4 +1,6 @@
 node_modules
 dist
 .env
-*.db
+*.dbsrc/App.tsx.backup
+src/App-Enhanced.tsx
+src/App-DarkMode.tsx
