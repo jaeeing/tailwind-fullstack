@@ -1,24 +1,43 @@
 {
   "name": "tailwind-fullstack",
   "version": "1.0.0",
-  "description": "",
-  "main": "setup.js",
+  "type": "module",
+  "description": "IT Full-stack Lab",
+  "main": "api/server.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "tsx api/server.ts",
+    "dev:backend": "tsx api/server.ts",
+    "dev:frontend": "vite",
+    "dev:all": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
   "dependencies": {
+    "@libsql/client": "^0.17.0",
+    "@prisma/adapter-libsql": "^7.3.0",
     "@prisma/client": "^7.3.0",
-    "express": "^5.2.1"
+    "express": "^4.18.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
-    "@types/express": "^5.0.6",
-    "@types/node": "^25.2.0",
+    "@prisma/config": "^7.3.0",
+    "@types/express": "^4.17.17",
+    "@types/node": "^20.0.0",
+    "@types/react": "^18.3.27",
+    "@types/react-dom": "^18.3.7",
+    "@vitejs/plugin-react": "^4.7.0",
+    "autoprefixer": "^10.4.24",
+    "concurrently": "^9.2.1",
+    "postcss": "^8.5.6",
     "prisma": "^7.3.0",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.9.3"
+    "tailwindcss": "^3.4.19",
+    "ts-node": "^10.9.1",
+    "tsx": "^4.21.0",
+    "typescript": "^5.0.0",
+    "vite": "^6.4.1"
   }
 }
